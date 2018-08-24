@@ -23,6 +23,8 @@ public class ListTOArrayList {
         
         int[] ar = {1,2,3,4,5};
         System.out.println(Arrays.stream(ar).map(n -> n).sum());
+        String[] str = {"madhu", "ravi"};
+        Arrays.stream(str).map(n -> n.length()).forEach(System.out::println);;
         
 	}
 }

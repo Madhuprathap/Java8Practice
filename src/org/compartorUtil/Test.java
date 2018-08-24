@@ -33,6 +33,8 @@ public class Test {
 		});
 		System.out.println(list);
 		
+		System.out.println("Sorting by salary by method reference way:");
+
 		//intern use-cases
 		String s1 = new String("Madhu");
 		String s2 = new String("Madhu");

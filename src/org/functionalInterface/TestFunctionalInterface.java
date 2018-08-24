@@ -1,7 +1,8 @@
 package org.functionalInterface;
 
+//This annotation is optional, good practice for javadoc purpose
 @FunctionalInterface
-public interface TestInterface {
+public interface TestFunctionalInterface {
 	public int sum(int v1, int v2);
 	
 //	FuntionalInterface can have only one undefined method
@@ -10,6 +11,7 @@ public interface TestInterface {
 	//FuntionalInterface can have object class methods
 	boolean equals(Object arg0);
 	
+	// Can have N number of default methods
 	default void concreteMethod1() {
 		System.out.println("Default concreteMethod1");
 	}
@@ -18,6 +20,7 @@ public interface TestInterface {
 		System.out.println("Default concreteMethod2");
 	}
 	
+	// Can have N number of static methods
 	static void staticMethod1() {
 		System.out.println("static methods1");
 	}
