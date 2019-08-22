@@ -32,10 +32,21 @@ public class FlatMapTest {
         System.out.println(listOfIntegers);
         String s1 =  new String("abc").intern();
         String s2 =  new String("abc").intern();
-        System.out.println( s1 == s2);
+        System.out.println( s1 == s2); // true
         String s3 = "abc";
         String s4 = "abc";
-        System.out.println(s3 == s4);
+        System.out.println(s3 == s4); //true
+        String s6 =  new String("abc");
+        s6.intern();
+        String s5 =  new String("abc");
+        s5.intern();
+        System.out.println( s6 == s5); //false
+        
+        String s7 =  new String("abc");
+        s7 = s7.intern();
+        String s8 =  "abc";
+        System.out.println( s7 == s8); //false
+        
         
         
         Timestamp sql = new Timestamp(new java.util.Date().getTime());
@@ -45,6 +56,7 @@ public class FlatMapTest {
         Thread.sleep(10000);
         calendar.setTimeInMillis(sql.getTime());;
         System.out.println(calendar);
+        
 	}
 
 }

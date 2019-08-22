@@ -36,6 +36,7 @@ public class Test {
 		System.out.println("Sorting by salary by method reference way:");
 
 		//intern use-cases
+		//pushing heap memory String object to literal pool of strings.
 		String s1 = new String("Madhu");
 		String s2 = new String("Madhu");
 		System.out.println(s1.equals(s2));

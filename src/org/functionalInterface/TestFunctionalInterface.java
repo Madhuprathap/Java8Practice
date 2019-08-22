@@ -8,9 +8,11 @@ public interface TestFunctionalInterface {
 //	FuntionalInterface can have only one undefined method
 //	public int div(int v1, int v2);
 	
-	//FuntionalInterface can have object class methods
+	//FuntionalInterface can have N number of object class methods
 	boolean equals(Object arg0);
 	
+	String toString();
+
 	// Can have N number of default methods
 	default void concreteMethod1() {
 		System.out.println("Default concreteMethod1");

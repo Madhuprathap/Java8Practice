@@ -16,8 +16,7 @@ public class Test8 {
 		
 		TestFunctionalInterface.staticMethod1();
 		TestFunctionalInterface.staticMethod2();
-		GreetingService greetService1 = message -> 
-	    System.out.println(salutation + message);
+		GreetingService greetService1 = message -> System.out.println(salutation + message);
 	    greetService1.sayMessage("Mahesh");
 	    
 	    TestInterface test = () -> {

@@ -11,6 +11,8 @@ public class ListTOArrayList {
 
 	public static void main(String[] args) {
 		List<Integer> num = Arrays.asList(1,2,3,4,5);
+		num.forEach(n -> {n = n; System.out.println(n);});
+		num.forEach(System.out::println);
         List<Integer> collect1 = num.stream().map(n -> n * 2).collect(Collectors.toList());
         System.out.println(collect1); //[2, 4, 6, 8, 10]
         num.stream().forEach(System.out::println);
@@ -23,8 +25,10 @@ public class ListTOArrayList {
         
         int[] ar = {1,2,3,4,5};
         System.out.println(Arrays.stream(ar).map(n -> n).sum());
+        Arrays.stream(ar).forEach(System.out::print);
         String[] str = {"madhu", "ravi"};
-        Arrays.stream(str).map(n -> n.length()).forEach(System.out::println);;
+        Arrays.stream(str).map(n -> n.length()).forEach(System.out::println);
+        Arrays.stream(str).forEach(System.out::print);
         
 	}
 }
